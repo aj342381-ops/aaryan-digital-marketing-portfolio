@@ -9,6 +9,8 @@ import {
   CreativeItem 
 } from '../types/portfolio';
 
+const baseAsset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+
 export const personalInfo = {
   name: "Aaryan Jangid",
   title: "Digital Marketer | Growth Strategist",
@@ -233,7 +235,7 @@ export const caseStudiesData: ProjectCaseStudy[] = [
       "Website UX Optimization Recommendations"
     ],
     placeholderNote: "Performance metrics (rank tracking and traffic reports) are currently being monitored for client review and will be updated with verified analytics.",
-    image: "/assets/workspace.jpeg",
+    image: baseAsset('assets/workspace.jpeg'),
     tags: ["On-Page SEO", "Social Media Marketing", "Content Calendar", "FMCG"]
   },
   {
@@ -265,7 +267,7 @@ export const caseStudiesData: ProjectCaseStudy[] = [
       "Competitor Social Strategy Breakdown"
     ],
     placeholderNote: "Specific client sales attribution and page impressions are confidential; editable verified case report metrics available upon employer request.",
-    image: "/assets/workspace.jpeg",
+    image: baseAsset('assets/workspace.jpeg'),
     tags: ["Social Media Management", "Keyword Research", "Content Planning", "Community"]
   },
   {
@@ -297,7 +299,7 @@ export const caseStudiesData: ProjectCaseStudy[] = [
       "Patient Engagement Content Guidelines"
     ],
     placeholderNote: "Patient inquiry logs and Google Business Profile local rank tracking data are maintained by the clinic practice.",
-    image: "/assets/workspace.jpeg",
+    image: baseAsset('assets/workspace.jpeg'),
     tags: ["Local SEO", "Healthcare Marketing", "Educational Content", "Patient Trust"]
   },
   {
@@ -329,7 +331,7 @@ export const caseStudiesData: ProjectCaseStudy[] = [
       "Targeting Matrix with Interest & Behavioral Intersections"
     ],
     placeholderNote: "Sample campaign architecture prepared for implementation; metrics will reflect live spend and lead volume upon scheduled seasonal launch.",
-    image: "/assets/workspace.jpeg",
+    image: baseAsset('assets/workspace.jpeg'),
     tags: ["Meta Ads", "Lead Generation", "Ad Copywriting", "Audience Targeting", "Funnel Strategy"]
   }
 ];
@@ -398,7 +400,7 @@ export const creativeWorkData: CreativeItem[] = [
     title: "Festive Season Social Campaign Design",
     category: "Social Media",
     description: "Vibrant promotional visual concept crafted for festive spice gift packs and regional holiday discounts.",
-    imageUrl: "/assets/workspace.jpeg",
+    imageUrl: baseAsset('assets/workspace.jpeg'),
     aspectRatio: "1:1 Square Post",
     tags: ["Canva Pro", "Social Media", "Festive Campaign"]
   },
@@ -407,7 +409,7 @@ export const creativeWorkData: CreativeItem[] = [
     title: "Dental Care Tip Infographic Carousel",
     category: "Infographics",
     description: "Educational carousel slide sequence breaking down daily oral hygiene best practices and prevention tips.",
-    imageUrl: "/assets/workspace.jpeg",
+    imageUrl: baseAsset('assets/workspace.jpeg'),
     aspectRatio: "4:5 Portrait Carousel",
     tags: ["Infographic", "Healthcare", "Education"]
   },
@@ -416,7 +418,7 @@ export const creativeWorkData: CreativeItem[] = [
     title: "Gym Membership Trial Pass Ad Creative",
     category: "Ad Creatives",
     description: "High-contrast, benefit-driven Meta Ad creative layout highlighting the 3-Day Free Trial pass with bold headline typography.",
-    imageUrl: "/assets/workspace.jpeg",
+    imageUrl: baseAsset('assets/workspace.jpeg'),
     aspectRatio: "1:1 Feed & 9:16 Story",
     tags: ["Ad Creative", "Lead Generation", "Direct Response"]
   },
@@ -425,7 +427,7 @@ export const creativeWorkData: CreativeItem[] = [
     title: "E-Commerce Grocery Discount Announcement",
     category: "Social Media",
     description: "Clean modern promotional creative announcing weekly basket essentials discounts with clear pricing badges.",
-    imageUrl: "/assets/workspace.jpeg",
+    imageUrl: baseAsset('assets/workspace.jpeg'),
     aspectRatio: "1:1 Square Post",
     tags: ["FMCG", "Product Showcase", "Social Media"]
   },
@@ -434,7 +436,7 @@ export const creativeWorkData: CreativeItem[] = [
     title: "Organic Search Content Roadmap",
     category: "Campaign Planning",
     description: "Structured content calendar blueprint detailing weekly publishing cadence, keyword intent targets, and channel formats.",
-    imageUrl: "/assets/workspace.jpeg",
+    imageUrl: baseAsset('assets/workspace.jpeg'),
     aspectRatio: "16:9 Landscape Blueprint",
     tags: ["Content Calendar", "Strategy", "Execution"]
   },
@@ -443,7 +445,7 @@ export const creativeWorkData: CreativeItem[] = [
     title: "Brand Voice & Visual Guide Template",
     category: "Social Media",
     description: "Consistent brand presentation framework featuring primary palette guidelines, typography rules, and logo spacing.",
-    imageUrl: "/assets/workspace.jpeg",
+    imageUrl: baseAsset('assets/workspace.jpeg'),
     aspectRatio: "16:9 Slide Presentation",
     tags: ["Branding", "Visual Identity", "Style Guide"]
   }

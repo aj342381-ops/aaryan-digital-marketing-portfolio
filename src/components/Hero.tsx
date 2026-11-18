@@ -115,7 +115,7 @@ export const Hero: React.FC = () => {
               <div className="relative rounded-3xl overflow-hidden bg-white border border-slate-200/90 shadow-2xl p-3 sm:p-4">
                 <div className="relative rounded-2xl overflow-hidden bg-gradient-to-b from-slate-100 to-slate-200 aspect-[4/5]">
                   <img
-                    src="/assets/aaryan-cv.png"
+                    src={`${import.meta.env.BASE_URL}assets/aaryan-cv.png`}
                     alt="Aaryan Jangid - Digital Marketer & Growth Strategist"
                     className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
                     onError={(e) => {

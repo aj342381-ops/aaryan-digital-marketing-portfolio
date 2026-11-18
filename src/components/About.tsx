@@ -63,7 +63,7 @@ export const About: React.FC = () => {
             <div className="relative rounded-3xl overflow-hidden bg-slate-50 border border-slate-200/80 shadow-lg p-2 sm:p-3">
               <div className="rounded-2xl overflow-hidden aspect-[4/3] relative bg-slate-200">
                 <img
-                  src="/assets/workspace.jpeg"
+                  src={`${import.meta.env.BASE_URL}assets/workspace.jpeg`}
                   alt="Aaryan Jangid Marketing Workspace"
                   className="w-full h-full object-cover"
                   onError={(e) => {
